@@ -13,10 +13,9 @@ with st.sidebar:
                       icons=['activity','heart'])
 # For icons we just have to mention the icon names from bootstrap
 # Loading the saved models
-diabetes_model = pickle.load(open('https://github.com/debesh99/multiple_disease_prediction_app/blob/main/trained_model/diabetes_trained_model.sav','rb'))
-diabetes_standard_scaler = pickle.load((open('https://github.com/debesh99/multiple_disease_prediction_app/blob/main/trained_model/diabetes_standard_scaler.sav','rb')))
-heart_disease_model = pickle.load(open('https://github.com/debesh99/multiple_disease_prediction_app/blob/main/trained_model/heart_disease_trained_model.sav','rb'))
-
+diabetes_model = pickle.load(open('../trained_model/diabetes_trained_model.sav','rb'))
+diabetes_standard_scaler = pickle.load((open('../trained_model/diabetes_standard_scaler.sav','rb')))
+heart_disease_model = pickle.load(open('../trained_model/heart_disease_trained_model.sav','rb'))
 # Diabetes
 if rad=="Diabetes Prediction":
     st.title("Diabetes Prediction using ML")
